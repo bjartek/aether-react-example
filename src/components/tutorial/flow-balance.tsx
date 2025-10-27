@@ -35,6 +35,8 @@ export function FlowBalance({ stepNumber = 3 }: { stepNumber?: number }) {
       : `0x${address}`
     : "";
 
+    console.log("running with address", address, formattedAddress)
+
   const script = FLOW_BALANCE_SCRIPT;
     const {
     data: balance,
